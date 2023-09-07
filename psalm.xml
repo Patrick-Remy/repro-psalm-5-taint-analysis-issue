@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<psalm
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+
+    phpVersion="7.4"
+    cacheDirectory=".psalm.cache"
+    runTaintAnalysis="true"
+>
+    <plugins>
+        <plugin filename="BadSqlTainter.php" />
+    </plugins>
+
+    <projectFiles>
+        <file name="example.php" />
+    </projectFiles>
+</psalm>

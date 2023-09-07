@@ -1,0 +1,7 @@
+# Ignore composer.lock as it's expected to change for this test
+composer.lock
+.psalm.cache
+vendor
+
+# IDE files
+.history
